@@ -29,7 +29,8 @@ public class MainController {
 	@RequestMapping( "/data/userdata" )
 	public Map<String,Object> home( @RequestParam("first") String first ) {
 	    Map<String,Object> model = new HashMap<String,Object>();
-	    model.put( "content", "get:" + first );
+	    if( first.equals("kjest") ) model.put( "content", "get:if:" + first );
+	    else model.put( "content", "get:else:" + first );
 	    return model;
 	}
 
