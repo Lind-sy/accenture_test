@@ -16,16 +16,15 @@ angular.module('hello', [ 'ngRoute' ]) // ... omitted code
 
 })
 .controller('home', function($scope, $http) {
-  $http.get('/resource/').success(function(data) {
-    $scope.greeting = data;
-  })
+	$scope.userdata = {content: 'ddddddd'}
+	$http.get('/resource/').success(function(data) {
+		$scope.greeting = data;
+	})
 })
 
 .controller('navigation',
+	function($rootScope, $scope, $http, $location) {
 
-  function($rootScope, $scope, $http, $location) {
-	
-	//$scope.test = {text: 'ddddddd'}
 
   var authenticate = function(credentials, callback) {
 
