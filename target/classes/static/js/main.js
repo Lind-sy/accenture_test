@@ -12,11 +12,12 @@ angular.module('hello', [ 'ngRoute' ]) // ... omitted code
 		controller : 'navigation'
 	}).otherwise('/');
 
-  $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
+	$httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+	$httpProvider.defaults.headers.common['Accept'] = 'application/json';
 
 })
 .controller('home', function($scope, $http) {
-	//$scope.userdata = {content: 'ddddddd'}
+	$scope.userdata = {content: 'ddddddd'}
 	$http.get('/data/userdata/?first=kkk').success(function(data) {
 		$scope.userdata = data;
 	})
