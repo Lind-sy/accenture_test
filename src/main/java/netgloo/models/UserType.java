@@ -10,23 +10,19 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "tests")
-public class Tests{
-	  
-	
-	  @Id
+@Table(name = "userType")
+public class UserType {
+
+	@Id
 	  @GeneratedValue(strategy = GenerationType.AUTO)
 	  private long id;
-	  
-	  @NotNull
-	  private String title;
-	  
-	  @ManyToOne
-	  @JoinColumn(name = "userID")
-	  private User user;
-	  
-	  @NotNull
-	  private String date;
+	
+	@ManyToOne
+	@JoinColumn(name = "userID")
+	private User user;
+
+	@NotNull
+	private String name;
 
 	public long getId() {
 		return id;
@@ -34,14 +30,6 @@ public class Tests{
 
 	public void setId(long id) {
 		this.id = id;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
 	}
 
 	public User getUser() {
@@ -52,17 +40,13 @@ public class Tests{
 		this.user = user;
 	}
 
-	public String getDate() {
-		return date;
+	public String getName() {
+		return name;
 	}
 
-	public void setDate(String date) {
-		this.date = date;
+	public void setName(String name) {
+		this.name = name;
 	}
-	  
 
-	  
-	  
-	
-	
+
 }
