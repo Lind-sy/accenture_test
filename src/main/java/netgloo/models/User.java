@@ -35,11 +35,32 @@ public class User {
   @NotNull
   private String password;
 
+  @NotNull
+  private String name;
+  @NotNull
+  private String surname;
+  
   // ------------------------
   // PUBLIC METHODS
   // ------------------------
   
-  public String getPassword() {
+  public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+public String getSurname() {
+	return surname;
+}
+
+public void setSurname(String surname) {
+	this.surname = surname;
+}
+
+public String getPassword() {
 	return password;
 }
 

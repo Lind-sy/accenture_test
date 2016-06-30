@@ -22,7 +22,7 @@ public class UserType {
 	private User user;
 
 	@NotNull
-	private String name;
+	private String type;
 
 	public long getId() {
 		return id;
@@ -40,12 +40,12 @@ public class UserType {
 		this.user = user;
 	}
 
-	public String getName() {
-		return name;
+	public String getType() {
+		return type;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setType(String name) {
+		this.type = name;
 	}
 
 
