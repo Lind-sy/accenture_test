@@ -16,11 +16,19 @@ import org.springframework.data.repository.CrudRepository;
 @Transactional
 public interface UserDao extends CrudRepository<User, Long> {
 
-  /**
-   * Return the user having the passed email or null if no user is found.
-   * 
-   * @param email the user email.
-   */
-  public User findByEmail(String email);
+	/**
+	 * Return the user having the passed email or null if no user is found.
+	 * 
+	 * @param email the user email.
+	 */
+	public User findByEmail( String email );
+	
+
+	/**
+	 * Return the user having the passed id or null if no user is found.
+	 * 
+	 * @param id the user id.
+	 */
+	public User findById( long id );
 
 } // class UserDao
