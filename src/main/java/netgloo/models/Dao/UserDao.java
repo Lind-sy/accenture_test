@@ -1,8 +1,10 @@
-package netgloo.models;
+package netgloo.models.Dao;
 
 import javax.transaction.Transactional;
 
 import org.springframework.data.repository.CrudRepository;
+
+import netgloo.models.User;
 
 /**
  * A DAO for the entity User is simply created by extending the CrudRepository

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import netgloo.models.User;
-import netgloo.models.UserDao;
+import netgloo.models.Dao.UserDao;
 
 //@Controller
 @RestController
@@ -39,7 +39,7 @@ public class MainController {
 	    }*/
 	    
 	    User user_user = userDao.findOne( (long) 1 );
-	    System.out.println( user_user.getId() + " " + user_user.getName() );
+	    System.out.println( user_user.getId() );
 	    return model;
 	}
 	

@@ -1,7 +1,7 @@
 package netgloo.controllers;
 
 import netgloo.models.User;
-import netgloo.models.UserDao;
+import netgloo.models.Dao.UserDao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -97,7 +97,6 @@ public class UserController {
 		try {
 			User user = userDao.findOne(id);
 			user.setEmail(email);
-			user.setName(name);
 			userDao.save(user);
 		}
 	    catch (Exception ex) {
