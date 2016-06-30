@@ -1,5 +1,10 @@
 C:\workspace\spring\accenture_test\src\main\java\netgloo\controllers\UserController.java
-C:\workspace\spring\accenture_test\src\main\java\netgloo\models\UserDao.java
+C:\workspace\spring\accenture_test\src\main\java\netgloo\models\UserType.java
+C:\workspace\spring\accenture_test\src\main\java\netgloo\models\Dao\UserDao.java
+C:\workspace\spring\accenture_test\src\main\java\netgloo\models\TestOuestions.java
 C:\workspace\spring\accenture_test\src\main\java\netgloo\Application.java
 C:\workspace\spring\accenture_test\src\main\java\netgloo\controllers\MainController.java
+C:\workspace\spring\accenture_test\src\main\java\netgloo\models\Tests.java
+C:\workspace\spring\accenture_test\src\main\java\netgloo\models\UserAnswers.java
 C:\workspace\spring\accenture_test\src\main\java\netgloo\models\User.java
+C:\workspace\spring\accenture_test\src\main\java\netgloo\models\TestAnswerType.java
