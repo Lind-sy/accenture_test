@@ -25,13 +25,42 @@ public class TestOuestions{
 	  @JoinColumn(name = "testsID")
 	  private Tests tests;
 	  
+	  
 	  @NotNull
 	  private String date;
 	  
+	  //All the answers
 	  @NotNull
-	  private String type;
+	  private String answer;
 	  
-	  @ManyToOne
+	  @NotNull
+	  private 	String multipleAnswers;
+	  
+	  @NotNull
+	  private byte videoAnswer;
+	  
+	  
+	  
+
+
+
+	public String getMultipleAnswers() {
+		return multipleAnswers;
+	}
+
+	public void setMultipleAnswers(String multipleAnswers) {
+		this.multipleAnswers = multipleAnswers;
+	}
+
+	public byte getVideoAnswer() {
+		return videoAnswer;
+	}
+
+	public void setVideoAnswer(byte videoAnswer) {
+		this.videoAnswer = videoAnswer;
+	}
+
+	@ManyToOne
 	  @JoinColumn(name = "userID")
 	  private User user;
 
@@ -59,6 +88,7 @@ public class TestOuestions{
 		this.tests = tests;
 	}
 
+
 	public String getDate() {
 		return date;
 	}
@@ -67,12 +97,12 @@ public class TestOuestions{
 		this.date = date;
 	}
 
-	public String getType() {
-		return type;
+	public String getAnswer() {
+		return answer;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setAnswer(String answer) {
+		this.answer = answer;
 	}
 
 	public User getUser() {
@@ -82,6 +112,7 @@ public class TestOuestions{
 	public void setUser(User user) {
 		this.user = user;
 	}
+
 
 	  
 	
